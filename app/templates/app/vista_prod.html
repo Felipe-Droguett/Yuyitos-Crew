@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+{% block css %}
+{% endblock %}
+{% block contenido %}
+
+{% for reg in productos %}
+
+<article> <input type="text" value="{{reg.data.0}}" hidden>
+  <a href="#p.data.0">
+    {% if reg.img_producto %}
+    {% endif%}
+    <h4>{{reg.data.1}}</h4>
+
+  </a>
+</article>
+
+{% endfor %}
+{% endblock contenido %}
+{% block js %}
+
+{% endblock js %}

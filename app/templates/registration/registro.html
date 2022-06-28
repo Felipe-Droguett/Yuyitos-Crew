@@ -13,18 +13,16 @@
             <div class="card" style="left: 270px;width: 600px; text-align: center;bottom: 70px;">
                 <div class="card-body">
                     <br>
-                    <h2>Iniciar Sesion</h2>
+                    <h2>Registrarse</h2>
                     <hr>
                     <form action="" method="post">
 
                         {% csrf_token %}
                         {{form | crispy}}
                         <br><br>
-                        <input type="submit" value="Iniciar Sesion" class="btn btn-success float-right">
+                        <input type="submit" value="Registrar" class="btn btn-success float-right">
                     </form>
-                    <br>
-                    <p><a href="{% url 'registro' %}" style="text-align: center;">Registrarse</a></p>
-                    <br>
+                    <br><br>
                 </div>
             </div>
 
